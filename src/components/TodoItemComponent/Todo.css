@@ -1,0 +1,74 @@
+.todo-item {
+    margin-bottom: 1rem; 
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 3px 10px -5px rgb(0, 0, 0, .05), 0px 8px 20px 1px rgb(0, 0, 0, .1);
+    border-bottom: 2px solid hsl(182, 25%, 80%);
+}
+
+@media screen and (max-width: 768px) {
+    .todo-item {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.todo-input, .todo-text {
+    width: 100%;
+    display: flex;  
+    flex: 1;
+    font-size: .9rem;
+    color: #333;
+}
+
+@media screen and (max-width: 768px){
+    .todo-text {
+        padding-top: 1rem;
+    }
+}
+
+.todo-item-options {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .todo-item-options {
+        width: 100%;
+        margin-top: 0.8rem;
+        justify-content: flex-end;
+    }
+}
+
+.todo-item-option {
+    background-color: transparent;
+    border:  none;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.todo-item-option.info {
+    color: lightskyblue;
+}
+
+.todo-item-option.success {
+    color: cadetblue;
+}
+
+.todo-item-option.danger {
+    color: lightcoral;
+}
+
+.todo-input {
+    border: 1px solid #ccc;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    outline: none;
+}
