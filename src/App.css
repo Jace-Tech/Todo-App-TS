@@ -68,6 +68,10 @@ html {
     outline: none;
 }
 
+.input-container button:active {
+    opacity: 0.8;
+}
+
 .items-container {
     margin-top: 5rem;
 }
